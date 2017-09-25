@@ -1,12 +1,30 @@
 <html>
   <head>
+    <style type="text/css">
+      .hidden {
+        display: none;
+      }
+
+      .visible {
+        .display: block;
+      }
+    </style>
   </head>
   <body>
-    <form id="supplier-form" method="POST" name="supplier">
-      <label for="Supplier">Enter supplier web site</label>
-      <input type="text" name="Supplier" id="supplier-web-site-input" placeholder="Supplier web site address" />
-      <button type="submit">Check supplier</button>
-    </form>
+    <div id="supplier-form-container">
+      <form id="supplier-form" method="POST" name="supplier-form">
+        <label for="Supplier">Enter supplier web site</label>
+        <input type="text" name="Supplier" id="supplier-web-site-input" placeholder="Supplier web site address" />
+        <button type="submit">Check supplier</button>
+      </form>
+    </div>
+    <div id="contact-form-container" class="hidden">
+      <form id="contact-form" method="POST" name="contact-form">
+        <label for="email">Please give us your work e-mail address:</label>
+        <input type="text" name="email" id="contact-email-input" placeholder="Work e-mail address" />
+        <button type="submit">Check supplier</button>
+      </form>
+    </div>
 
     <!-- 3rd party libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
