@@ -30,8 +30,7 @@ p {
   color: black;
   font-size: 20px;
   font-weight: bold;
-  margin: 10px;
-
+  margin-right: 10px;
 }
 
 .supplier-button {
@@ -46,7 +45,6 @@ p {
   color: rgb(0, 142, 14);
   font-size: 20px;
   font-weight: bold;
-  margin: 10px;
 
 }
 
@@ -55,17 +53,25 @@ p {
 
 }
 
+.small-text {
+  font-size: 10px;
+  padding-top: 0px;
+  margin-top: 0px;
+
+}
+
 #supplier-form {
 }
 
 #check-supplier {
   margin-top: 80px;
-
+  margin-bottom: 50px;
+  line-height: 40px;
 }
+
 
 #we-are {
   clear: both;
-  margin-top: 80px;
   background: black url(images/worker.jpg) center center / cover;
 }
 
@@ -79,7 +85,9 @@ p {
 }
 
 .we-are__community {
-  max-width: 400px;
+  max-width: 450px;
+  white-space: pre-line;
+  font-size: 30px;
 }
 
 
