@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-  font-size: 42px;
+  font-size: 38px;
   font-weight: bold;
   font-style: normal;
 }
@@ -65,22 +65,25 @@ p {
 
 #we-are {
   clear: both;
-  margin-top: 50px;
+  margin-top: 80px;
   background: black url(images/worker.jpg) center center / cover;
 }
 
 .we-are__content {
   padding: 60px;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  color: black;
+  color: white;
   font-weight: 600;
+
 }
 
 .we-are__community {
   max-width: 400px;
 }
 
+
 #how-it-works {
   padding-top: 50px;
+  padding-bottom: 50px;
 }
