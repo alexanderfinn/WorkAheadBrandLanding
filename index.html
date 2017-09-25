@@ -11,6 +11,8 @@
     </style>
   </head>
   <body>
+    <div id="messages-contaner">
+    </div>
     <div id="supplier-form-container">
       <form id="supplier-form" method="POST" name="supplier-form">
         <label for="Supplier">Enter supplier web site</label>
@@ -23,6 +25,51 @@
         <label for="email">Please give us your work e-mail address:</label>
         <input type="text" name="email" id="contact-email-input" placeholder="Work e-mail address" />
         <button type="submit">Check supplier</button>
+      </form>
+    </div>
+
+    <div id="additional-suppliers-container" class="hidden">
+      <form id="additional-suppliers-form" method="POST" name="additional-suppliers-form">
+        <p>Enter additional suppliers web sites:</p>
+        <table border="0" cellpadding="0" cellpadding="0">
+          <tr>
+            <th>Supplier name</th>
+            <th>Very important. I want to act now</th>
+            <th>Important but I have limited resources</th>
+            <th>Just keep me up-to-date</th>
+          </tr>
+          <tr>
+            <td><input type="text" name="supplier1" id="additional-supplier-input1" placeholder="Supplier web site address" /></td>
+            <td><input type="radio" name="importance1" id="additional-supplier-importance1" value="1"/></td>
+            <td><input type="radio" name="importance1" id="additional-supplier-importance1" value="2"/></td>
+            <td><input type="radio" name="importance1" id="additional-supplier-importance1" value="3"/></td>
+          </tr>
+          <tr>
+            <td><input type="text" name="supplier2" id="additional-supplier-input2" placeholder="Supplier web site address" /></td>
+            <td><input type="radio" name="importance2" id="additional-supplier-importance2" value="1"/></td>
+            <td><input type="radio" name="importance2" id="additional-supplier-importance2" value="2"/></td>
+            <td><input type="radio" name="importance2" id="additional-supplier-importance2" value="3"/></td>
+          </tr>
+          <tr>
+            <td><input type="text" name="supplier3" id="additional-supplier-input3" placeholder="Supplier web site address" /></td>
+            <td><input type="radio" name="importance3" id="additional-supplier-importance3" value="1"/></td>
+            <td><input type="radio" name="importance3" id="additional-supplier-importance3" value="2"/></td>
+            <td><input type="radio" name="importance3" id="additional-supplier-importance3" value="3"/></td>
+          </tr>
+          <tr>
+            <td><input type="text" name="supplier4" id="additional-supplier-input4" placeholder="Supplier web site address" /></td>
+            <td><input type="radio" name="importance4" id="additional-supplier-importance4" value="1"/></td>
+            <td><input type="radio" name="importance4" id="additional-supplier-importance4" value="2"/></td>
+            <td><input type="radio" name="importance4" id="additional-supplier-importance4" value="3"/></td>
+          </tr>
+          <tr>
+            <td><input type="text" name="supplier5" id="additional-supplier-input5" placeholder="Supplier web site address" /></td>
+            <td><input type="radio" name="importance5" id="additional-supplier-importance5" value="1"/></td>
+            <td><input type="radio" name="importance5" id="additional-supplier-importance5" value="2"/></td>
+            <td><input type="radio" name="importance5" id="additional-supplier-importance5" value="3"/></td>
+          </tr>
+        </table>
+        <button type="submit">Check suppliers</button>
       </form>
     </div>
 
