@@ -1,34 +1,38 @@
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+
     <style type="text/css">
       .hidden {
         display: none;
       }
-
-      .visible {
-        .display: block;
-      }
+      
     </style>
   </head>
   <body>
+  <section id="check-supplier">
     <div id="messages-contaner">
     </div>
-    <div id="supplier-form-container">
-      <form id="supplier-form" method="POST" name="supplier-form">
-        <label for="Supplier">Enter supplier web site</label>
-        <input type="text" name="Supplier" id="supplier-web-site-input" placeholder="Supplier web site address" />
-        <button type="submit">Check supplier</button>
-      </form>
-    </div>
-    <div id="contact-form-container" class="hidden">
-      <form id="contact-form" method="POST" name="contact-form">
-        <label for="email">Please give us your work e-mail address:</label>
-        <input type="text" name="email" id="contact-email-input" placeholder="Work e-mail address" />
-        <button type="submit">Check supplier</button>
-      </form>
-    </div>
+    <div id="supplier-form-container" class="container">
+    <h1>Make jobs better in your supply chain.</h1>
+    <p>See what employees say about their working conditions.<br>
+      Work together with like-minded brands.</p>
 
-    <div id="additional-suppliers-container" class="hidden">
+    <form id="supplier-form" method="POST" name="supplier">
+      <div class="starthere">Start here:</div>
+      <input type="text" name="Supplier" id="supplier-web-site-input" class="supplier-input starthere" placeholder="Supplier website" />
+      <button type="submit" class="supplier-button starthere ">Continue</button>
+    </form>
+    </div>
+    <div id="contact-form-container" class="hidden container">
+       <form id="contact-form" method="POST" name="contact-form">
+         <label for="email">Please give us your work e-mail address:</label>
+         <input type="text" name="email" id="contact-email-input" placeholder="Work e-mail address" />
+         <button type="submit">Check supplier</button>
+       </form>
+    </div>
+    <div id="additional-suppliers-container" class="hidden container">
       <form id="additional-suppliers-form" method="POST" name="additional-suppliers-form">
         <p>Enter additional suppliers web sites:</p>
         <table border="0" cellpadding="0" cellpadding="0">
@@ -72,6 +76,34 @@
         <button type="submit">Check suppliers</button>
       </form>
     </div>
+  </section>
+
+  <section id="we-are">
+    <div class="we-are__content">
+      <div class="container">
+        <div class="we-are__community">
+          <p>We are a community of companies. We want our products
+            made by people working in decent working conditions.</p>
+          <p>We are here to work together to advance human rights
+            and decent working conditions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works">
+    <div class="container">
+      <h2>Step1</h2>
+      <p>step1 text1</p>
+      <h2>Step2</h2>
+      <p>step1 text1</p>
+
+      <h2>Step3</h2>
+      <p>step1 text1</p>
+    </div>
+  </section>
+
+
 
     <!-- 3rd party libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
