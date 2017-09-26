@@ -147,3 +147,35 @@ p {
   padding-top: 0px;
   margin-top: 0px;
 }
+
+.dashed-line {
+  width: 100%;
+  border-bottom: 1px dashed grey;
+
+
+}
+
+#footer {
+  width: 600px;
+  height: 120px;
+  margin: auto;
+  padding-top: 20px;
+
+}
+
+#footer .logo {
+  width: 100px;
+  float: left;
+}
+
+#footer p {
+  font-size: 14px;
+}
+
+.footer-contact {
+  width: 300px;
+  margin: auto;
+  float: left;
+  padding-left: 20px;
+
+}
