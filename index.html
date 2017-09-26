@@ -11,47 +11,131 @@
     </style>
   </head>
   <body>
-  <section id="check-supplier">
+  <section id="check-supplier" class="container">
 
     <div id="messages-container">
     </div>
-    <div id="supplier-form-container" class="container">
+    <div id="supplier-form-container">
     <h1>Make better jobs in your supply chain.</h1>
-    <p>See what your supplier's employees say about their working conditions.<br>
+    <p class="check-supplier__intro">See what your supplier's employees say about their working conditions.<br>
     Work together with your supplier and like-minded brands for a positive change.</p>
 
     <form id="supplier-form" method="POST" name="supplier">
       <div class="starthere"><strong>See if your supplier is already on Work Ahead:</strong></div>
       <input type="text" name="Supplier" id="supplier-web-site-input" class="supplier-input starthere" placeholder="Supplier website" />
       <button type="submit" class="supplier-button starthere ">Continue</button>
-      <p class="small-text">If your supplier doesn't have a website, write supplier name, address, and country.<br>
-      </p>
+      <p class="small-text">If your supplier doesn't have a website, write supplier name, address, and country.</p>
 
     </form>
     </div>
     <div id="contact-form-container" class="hidden container">
        <form id="contact-form" method="POST" name="contact-form">
-         <label for="email">Please give us your work e-mail address:</label>
-         <input type="text" name="email" id="contact-email-input" placeholder="Work e-mail address" />
-         <button type="submit">Check supplier</button>
+         <label for="email"><h2>What is your work email address?</h2>
+         <p>Enter your email to see if your supplier is already on Work Ahead.</p></label>
+         <input type="text" name="email" id="contact-email-input" class="supplier-input starthere" placeholder="Your work email" />
+         <button type="submit" class="supplier-button starthere ">Continue</button>
+         <p class="small-text">We'll keep your email safe and never spam you.</p>
        </form>
     </div>
     <div id="additional-suppliers-container" class="hidden container">
       <form id="additional-suppliers-form" method="POST" name="additional-suppliers-form">
-        <p>Enter additional suppliers web sites:</p>
-        <table border="0" cellpadding="0" cellpadding="0">
-          <tr>
-            <th>Supplier name</th>
-            <th>Very important. I want to act now</th>
-            <th>Important but I have limited resources</th>
-            <th>Just keep me up-to-date</th>
-          </tr>
-          <tr>
-            <td><input type="text" name="supplier1" id="additional-supplier-input1" placeholder="Supplier web site address" /></td>
-            <td><input type="radio" name="importance1" id="additional-supplier-importance1" value="1"/></td>
-            <td><input type="radio" name="importance1" id="additional-supplier-importance1" value="2"/></td>
-            <td><input type="radio" name="importance1" id="additional-supplier-importance1" value="3"/></td>
-          </tr>
+        <h2>We don't have data yet on that supplier.</h2>
+        <p>We will let you know once we do! Check for other suppliers:</p>
+        <div class="table">
+          <div class="table-cell table-cell__firstrow"></div>
+          <div class="table-cell table-cell__head1">Helping this supplier advance human rights and decent working conditions is...</div>
+
+          <div class="table-cell table-cell__firstrow"></div>
+          <div class="table-cell table-cell__head2 small-text"></div>
+          <div class="table-cell table-cell__head2 small-text"></div>
+          <div class="table-cell table-cell__head2 small-text"></div>
+
+          <div class="table-cell table-cell__firstrow">
+            <input type="text" name="supplier1" id="additional-supplier-input1"
+            class="supplier-input starthere supplier-input__table" placeholder="Supplier website" />
+          </div>
+          <div class="table-cell">
+            <input type="radio" name="importance1" id="additional-supplier-importance1" value="1"/>
+            <p class="table-select">Very important</p>
+          </div>
+          <div class="table-cell">
+            <td><input type="radio" name="importance1" id="additional-supplier-importance1" value="2"/>
+              <p class="table-select">Important</p>
+          </div>
+          <div  class="table-cell">
+            <td><input type="radio" name="importance1" id="additional-supplier-importance1" value="3"/>
+              <p class="table-select">Keep me up-to-date</p>
+          </div>
+
+          <div class="table-cell table-cell__firstrow">
+            <input type="text" name="supplier2" id="additional-supplier-input2"
+            class="supplier-input starthere supplier-input__table" placeholder="Supplier website" />
+          </div>
+          <div class="table-cell">
+            <input type="radio" name="importance2" id="additional-supplier-importance2" value="1"/>
+            <p class="table-select">Very important</p>
+          </div>
+          <div class="table-cell">
+            <td><input type="radio" name="importance2" id="additional-supplier-importance2" value="2"/>
+              <p class="table-select">Important</p>
+          </div>
+          <div  class="table-cell">
+            <td><input type="radio" name="importance2" id="additional-supplier-importance2" value="3"/>
+              <p class="table-select">Keep me up-to-date</p>
+          </div>
+
+          <div class="table-cell table-cell__firstrow">
+            <input type="text" name="supplier3" id="additional-supplier-input3"
+            class="supplier-input starthere supplier-input__table" placeholder="Supplier website" />
+          </div>
+          <div class="table-cell">
+            <input type="radio" name="importance3" id="additional-supplier-importance3" value="1"/>
+            <p class="table-select">Very important</p>
+          </div>
+          <div class="table-cell">
+            <td><input type="radio" name="importance3" id="additional-supplier-importance3" value="2"/>
+              <p class="table-select">Important</p>
+          </div>
+          <div  class="table-cell">
+            <td><input type="radio" name="importance3" id="additional-supplier-importance3" value="3"/>
+              <p class="table-select">Keep me up-to-date</p>
+          </div>
+
+          <div class="table-cell table-cell__firstrow">
+            <input type="text" name="supplier4" id="additional-supplier-input4"
+            class="supplier-input starthere supplier-input__table" placeholder="Supplier website" />
+          </div>
+          <div class="table-cell">
+            <input type="radio" name="importance4" id="additional-supplier-importance4" value="1"/>
+            <p class="table-select">Very important</p>
+          </div>
+          <div class="table-cell">
+            <td><input type="radio" name="importance4" id="additional-supplier-importance4" value="2"/>
+              <p class="table-select">Important</p>
+          </div>
+          <div  class="table-cell">
+            <td><input type="radio" name="importance4" id="additional-supplier-importance4" value="3"/>
+              <p class="table-select">Keep me up-to-date</p>
+          </div>
+
+          <div class="table-cell table-cell__firstrow">
+            <input type="text" name="supplier5" id="additional-supplier-input5"
+            class="supplier-input starthere supplier-input__table" placeholder="Supplier website" />
+          </div>
+          <div class="table-cell">
+            <input type="radio" name="importance5" id="additional-supplier-importance5" value="1"/>
+            <p class="table-select">Very important</p>
+          </div>
+          <div class="table-cell">
+            <td><input type="radio" name="importance5" id="additional-supplier-importance5" value="2"/>
+              <p class="table-select">Important</p>
+          </div>
+          <div  class="table-cell">
+            <td><input type="radio" name="importance5" id="additional-supplier-importance5" value="3"/>
+              <p class="table-select">Keep me up-to-date</p>
+          </div>
+        </div>
+        <!--
           <tr>
             <td><input type="text" name="supplier2" id="additional-supplier-input2" placeholder="Supplier web site address" /></td>
             <td><input type="radio" name="importance2" id="additional-supplier-importance2" value="1"/></td>
@@ -76,12 +160,13 @@
             <td><input type="radio" name="importance5" id="additional-supplier-importance5" value="2"/></td>
             <td><input type="radio" name="importance5" id="additional-supplier-importance5" value="3"/></td>
           </tr>
-        </table>
-        <button type="submit">Check suppliers</button>
+        </table> -->
+        <button type="submit" class="supplier-button starthere supplier-table__button">Check suppliers</button>
       </form>
     </div>
     <div id="thank-you-container" class="container hidden">
-      <h1>Thank you!</h1>
+      <h1>We've saved the suppliers you submitted.</h1>
+      <p>We'll let you know by email .</p>
     </div>
   </section>
 
@@ -101,7 +186,7 @@
       <p>Share information and coordinate with like-minded companies,
       anonymously and confidentially. Improving jobs improves lives.</p>
 
-      <h2>Data to bring everyone on the same page</h2>
+      <h2>Bring everyone on the same page</h2>
       <p>Making meaningful changes starts with knowing what to keep, what to change.
         We help everyone to be on the same page
       with reliable data, collected anonymously and confidentially,
