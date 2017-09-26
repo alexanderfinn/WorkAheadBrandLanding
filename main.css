@@ -63,6 +63,7 @@ p {
 }
 
 #check-supplier {
+
   margin-top: 80px;
   margin-bottom: 50px;
   min-height: 300px;
@@ -75,7 +76,7 @@ p {
 
 #we-are {
   clear: both;
-  background: black url(images/worker.jpg) center center / cover;
+  background: black url(images/weaving.jpg) center center / cover;
 }
 
 .we-are__content {
